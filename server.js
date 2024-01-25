@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 //app.use(errorMiddleware);
 app.use(bodyParser.json())
-app.use("/api/stock",stockroute);
+app.use("/api/stocks",stockroute);
 
 const PORT=5000
 connectDb().then(()=>{
